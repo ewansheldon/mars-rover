@@ -22,8 +22,8 @@ public class Grid {
     }
 
     private boolean isObstacle(int[] newCoordinates) {
-        for (int i = 0; i < obstacles.length; i++) {
-            if (newCoordinates.equals(obstacles[i])) {
+        for (int[] obstacle : obstacles) {
+            if (newCoordinates.equals(obstacle)) {
                 return true;
             }
         }
