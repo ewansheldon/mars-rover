@@ -1,7 +1,4 @@
-import ewansheldon.kata.mars_rover.Grid;
-import ewansheldon.kata.mars_rover.MarsRover;
-import ewansheldon.kata.mars_rover.Orientation;
-import ewansheldon.kata.mars_rover.Position;
+import ewansheldon.kata.mars_rover.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -16,7 +13,8 @@ public class MarsRoverShould {
         Grid grid = new Grid();
         Orientation orientation = new Orientation();
         Position position = new Position(grid, orientation);
-        marsRover = new MarsRover(position);
+        CommandControl commandControl = new CommandControl(position);
+        marsRover = new MarsRover(commandControl);
     }
 
     @Test
