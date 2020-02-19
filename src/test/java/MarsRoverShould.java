@@ -53,12 +53,4 @@ public class MarsRoverShould {
     void wrap_when_beyond_plateau_limits() {
         assertEquals("0:0:N", marsRover.execute("MMMMMMMMMM"));
     }
-
-//    @Test
-//    void should_stop_and_return_when_obstacles() {
-//        int[] obstacleCoords = new int[]{0,3};
-//        Grid grid = new Grid(obstacleCoords);
-//        marsRover = new MarsRover(grid);
-//        assertEquals("O:0:2:N", marsRover.execute("MMMM"));
-//    }
 }
