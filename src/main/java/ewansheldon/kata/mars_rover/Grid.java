@@ -1,12 +1,11 @@
 package ewansheldon.kata.mars_rover;
 
 public class Grid {
-    private int[] limits;
-    private int LOWER_LIMIT = 0;
+    private static final int LOWER_LIMIT = 0;
+    private static final int[] LIMITS = new int[]{10, 10};
     private int[][] obstacles;
 
     public Grid(int[] ...obstacles) {
-        this.limits = new int[]{10, 10};
         this.obstacles = obstacles;
     }
 
@@ -14,7 +13,7 @@ public class Grid {
         for (int i = 0; i < 2; i++) {
             int coordinate = newCoordinates[i];
             if (beyondUpperLimit(coordinate, i)) newCoordinates[i] = 0;
-            if (beyondLowerLimit(coordinate)) newCoordinates[i] = limits[i] - 1;
+            if (beyondLowerLimit(coordinate)) newCoordinates[i] = LIMITS[i] - 1;
         }
 
         if (isObstacle(newCoordinates)) throw new ObstacleEncounteredException();
@@ -36,6 +35,6 @@ public class Grid {
     }
 
     private boolean beyondUpperLimit(int newCoordinate, int i) {
-        return newCoordinate == limits[i];
+        return newCoordinate == LIMITS[i];
     }
 }
