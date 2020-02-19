@@ -3,6 +3,10 @@ package ewansheldon.kata.mars_rover;
 import static java.lang.String.format;
 
 public class MarsRover {
+    public static final String DEFAULT_DIRECTION = "N";
+    public static final String RESPONSE_FORMAT = "%s:%s:%s";
+    public static final String OBSTACLE_FLAG = "O:";
+    private final int[] DEFAULT_COORDINATES = new int[]{0,0};
     private int[] coordinates;
     private String dir;
     private String commands;
@@ -10,8 +14,8 @@ public class MarsRover {
 
     public MarsRover(Grid grid) {
         this.grid = grid;
-        this.coordinates = new int[]{0, 0};
-        this.dir = "N";
+        this.coordinates = DEFAULT_COORDINATES;
+        this.dir = DEFAULT_DIRECTION;
     }
 
     public String execute(String commands) {
@@ -26,11 +30,11 @@ public class MarsRover {
     }
 
     private String formattedPosition() {
-        return format("%s:%s:%s", coordinates[0], coordinates[1], dir);
+        return format(RESPONSE_FORMAT, coordinates[0], coordinates[1], dir);
     }
 
     private String obstacleResponse() {
-        return "O:" + formattedPosition();
+        return OBSTACLE_FLAG + formattedPosition();
     }
 
     private void executeCommands() throws ObstacleEncounteredException {
@@ -63,12 +67,12 @@ public class MarsRover {
         }
     }
 
-    private int[] addMovementVector(int[] newCoordinates, int[] movementVector) {
+    private int[] addMovementVector(int[] origin, int[] vector) {
         for (int i = 0; i < 2; i++) {
-            newCoordinates[i] += movementVector[i];
+            origin[i] += vector[i];
         }
 
-        return newCoordinates;
+        return origin;
     }
 
     private CommandMap getCommandMap() {
