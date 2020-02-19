@@ -1,21 +1,22 @@
 package ewansheldon.kata.mars_rover;
 
+import javax.swing.text.Position;
+
 import static java.lang.String.format;
 
 public class MarsRover {
-    public static final String DEFAULT_DIRECTION = "N";
     public static final String RESPONSE_FORMAT = "%s:%s:%s";
     public static final String OBSTACLE_FLAG = "O:";
     private final int[] DEFAULT_COORDINATES = new int[]{0,0};
-    private int[] coordinates;
-    private String dir;
+    private Position position;
+    private Orientation orientation;
     private String commands;
     private Grid grid;
 
-    public MarsRover(Grid grid) {
+    public MarsRover(Grid grid, Orientation orientation, Position position) {
         this.grid = grid;
-        this.coordinates = DEFAULT_COORDINATES;
-        this.dir = DEFAULT_DIRECTION;
+        this.orientation = orientation;
+        this.position = position;
     }
 
     public String execute(String commands) {
@@ -41,20 +42,12 @@ public class MarsRover {
                 move();
                 break;
             case 'R':
-                turnRight();
+                orientation.turnRight();
                 break;
             case 'L':
-                turnLeft();
+                orientation.turnLeft();
                 break;
         }
-    }
-
-    private void turnRight() {
-        dir = getNextPosition().right;
-    }
-
-    private void turnLeft() {
-        dir = getNextPosition().left;
     }
 
     private void move() throws ObstacleEncounteredException {
@@ -76,11 +69,15 @@ public class MarsRover {
     }
 
     private NextPosition getNextPosition() {
-        return NextPosition.valueOf(dir);
+        return NextPosition.valueOf(currentDirection());
+    }
+
+    private String currentDirection() {
+        return orientation.getDirection();
     }
 
     private String formattedPosition() {
-        return format(RESPONSE_FORMAT, coordinates[0], coordinates[1], dir);
+        return format(RESPONSE_FORMAT, coordinates[0], coordinates[1], currentDirection());
     }
 
     private String obstacleResponse() {
