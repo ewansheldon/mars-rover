@@ -8,17 +8,9 @@ public class CommandControl {
     }
 
     public void execute(char command) throws ObstacleEncounteredException {
-        switch (command) {
-            case 'M':
-                position.move();
-                break;
-            case 'R':
-                position.turnRight();
-                break;
-            case 'L':
-                position.turnLeft();
-                break;
-        }
+        if (command == 'M') position.move();
+        if (command == 'R') position.turnRight();
+        if (command == 'L') position.turnLeft();
     }
 
     public String currentDirection() {
