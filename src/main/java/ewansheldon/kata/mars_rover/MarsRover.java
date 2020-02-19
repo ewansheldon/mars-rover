@@ -50,15 +50,15 @@ public class MarsRover {
     }
 
     private void turnRight() {
-        dir = currentCommandMap().right;
+        dir = getNextPosition().right;
     }
 
     private void turnLeft() {
-        dir = currentCommandMap().left;
+        dir = getNextPosition().left;
     }
 
     private void move() throws ObstacleEncounteredException {
-        int[] newCoordinates = addMovementVector(coordinates, currentCommandMap().movementVector);
+        int[] newCoordinates = addMovementVector(coordinates, getNextPosition().movementVector);
 
         try {
             coordinates = grid.confirmCoordinates(newCoordinates);
@@ -75,25 +75,8 @@ public class MarsRover {
         return origin;
     }
 
-    private CommandMap currentCommandMap() {
-        return CommandMap.valueOf(dir);
-    }
-
-    private enum CommandMap {
-        N ("W", "E", new int[]{0,1}),
-        E ("N", "S", new int[]{1,0}),
-        S ("E", "W", new int[]{0,-1}),
-        W ("S", "N", new int[]{-1,0});
-
-        private final String left;
-        private final String right;
-        private final int[] movementVector;
-
-        CommandMap(String left, String right, int[] movementVector) {
-            this.left = left;
-            this.right = right;
-            this.movementVector = movementVector;
-        }
+    private NextPosition getNextPosition() {
+        return NextPosition.valueOf(dir);
     }
 
     private String formattedPosition() {

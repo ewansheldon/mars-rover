@@ -1,4 +1,4 @@
 package ewansheldon.kata.mars_rover;
 
-public class ObstacleEncounteredException extends Throwable {
+public class ObstacleEncounteredException extends Exception {
 }
