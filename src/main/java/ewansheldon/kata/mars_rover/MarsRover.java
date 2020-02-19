@@ -3,16 +3,15 @@ package ewansheldon.kata.mars_rover;
 import static java.lang.String.format;
 
 public class MarsRover {
-    public static final int RIGHT = 1;
-    public static final int LEFT = -1;
     private int[] coordinates;
-    private String dir = "N";
+    private String dir;
     private String commands;
     private Grid grid;
 
     public MarsRover(Grid grid) {
         this.grid = grid;
         this.coordinates = new int[]{0, 0};
+        this.dir = "N";
     }
 
     public String execute(String commands) {
@@ -26,12 +25,12 @@ public class MarsRover {
         }
     }
 
-    private String obstacleResponse() {
-        return "O:" + formattedPosition();
-    }
-
     private String formattedPosition() {
         return format("%s:%s:%s", coordinates[0], coordinates[1], dir);
+    }
+
+    private String obstacleResponse() {
+        return "O:" + formattedPosition();
     }
 
     private void executeCommands() throws ObstacleEncounteredException {
@@ -64,16 +63,16 @@ public class MarsRover {
         }
     }
 
-    private CommandMap getCommandMap() {
-        return CommandMap.valueOf(dir);
-    }
-
     private int[] addMovementVector(int[] newCoordinates, int[] movementVector) {
         for (int i = 0; i < 2; i++) {
             newCoordinates[i] += movementVector[i];
         }
 
         return newCoordinates;
+    }
+
+    private CommandMap getCommandMap() {
+        return CommandMap.valueOf(dir);
     }
 
     private enum CommandMap {
