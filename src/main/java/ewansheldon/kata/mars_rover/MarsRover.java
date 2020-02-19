@@ -29,14 +29,6 @@ public class MarsRover {
         }
     }
 
-    private String formattedPosition() {
-        return format(RESPONSE_FORMAT, coordinates[0], coordinates[1], dir);
-    }
-
-    private String obstacleResponse() {
-        return OBSTACLE_FLAG + formattedPosition();
-    }
-
     private void executeCommands() throws ObstacleEncounteredException {
         for (int i = 0; i < commands.length(); i++) {
             executeCommand(commands.charAt(i));
@@ -49,16 +41,24 @@ public class MarsRover {
                 move();
                 break;
             case 'R':
-                dir = getCommandMap().right;
+                turnRight();
                 break;
             case 'L':
-                dir = getCommandMap().left;
+                turnLeft();
                 break;
         }
     }
 
+    private void turnRight() {
+        dir = currentCommandMap().right;
+    }
+
+    private void turnLeft() {
+        dir = currentCommandMap().left;
+    }
+
     private void move() throws ObstacleEncounteredException {
-        int[] newCoordinates = addMovementVector(coordinates, getCommandMap().movementVector);
+        int[] newCoordinates = addMovementVector(coordinates, currentCommandMap().movementVector);
 
         try {
             coordinates = grid.confirmCoordinates(newCoordinates);
@@ -75,7 +75,7 @@ public class MarsRover {
         return origin;
     }
 
-    private CommandMap getCommandMap() {
+    private CommandMap currentCommandMap() {
         return CommandMap.valueOf(dir);
     }
 
@@ -94,5 +94,13 @@ public class MarsRover {
             this.right = right;
             this.movementVector = movementVector;
         }
+    }
+
+    private String formattedPosition() {
+        return format(RESPONSE_FORMAT, coordinates[0], coordinates[1], dir);
+    }
+
+    private String obstacleResponse() {
+        return OBSTACLE_FLAG + formattedPosition();
     }
 }
