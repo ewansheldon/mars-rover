@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MarsRoverShould {
     private MarsRover marsRover;
+    private String commands;
 
     @BeforeEach
     void setUp() {
@@ -16,41 +17,49 @@ public class MarsRoverShould {
 
     @Test
     void return_default_position_with_no_commands_given() {
-        assertEquals("0:0:N", marsRover.execute(""));
+        commands = "";
+        assertEquals("0:0:N", marsRover.execute(commands));
     }
 
     @Test
     void move_forward_and_return_new_position() {
-        assertEquals("0:1:N", marsRover.execute("M"));
+        commands = "M";
+        assertEquals("0:1:N", marsRover.execute(commands));
     }
 
     @Test
     void turn_right_and_return_new_direction() {
-        assertEquals("0:0:E", marsRover.execute("R"));
+        commands = "R";
+        assertEquals("0:0:E", marsRover.execute(commands));
     }
 
     @Test
     void turn_left_and_return_new_direction() {
-        assertEquals("0:0:W", marsRover.execute("L"));
+        commands = "L";
+        assertEquals("0:0:W", marsRover.execute(commands));
     }
 
     @Test
     void turn_move_and_return_new_position_and_direction() {
-        assertEquals("1:0:E", marsRover.execute("RM"));
+        commands = "RM";
+        assertEquals("1:0:E", marsRover.execute(commands));
     }
 
     @Test
     void turn_twice_and_return_new_direction() {
-        assertEquals("0:0:S", marsRover.execute("RR"));
+        commands = "RR";
+        assertEquals("0:0:S", marsRover.execute(commands));
     }
 
     @Test
     void executes_combination_command() {
-        assertEquals("2:3:N", marsRover.execute("MMRMMLM"));
+        commands = "MMRMMLM";
+        assertEquals("2:3:N", marsRover.execute(commands));
     }
 
     @Test
     void wrap_when_beyond_plateau_limits() {
-        assertEquals("0:0:N", marsRover.execute("MMMMMMMMMM"));
+        commands = "MMMMMMMMMM";
+        assertEquals("0:0:N", marsRover.execute(commands));
     }
 }

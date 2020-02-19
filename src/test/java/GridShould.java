@@ -37,8 +37,6 @@ public class GridShould {
     void throw_exception_if_obstacle_encountered() {
         final int[] obstacle = new int[]{2,2};
         grid = new Grid(obstacle);
-        assertThrows(ObstacleEncounteredException.class, () -> {
-            grid.confirmCoordinates(obstacle);
-        });
+        assertThrows(ObstacleEncounteredException.class, () -> grid.confirmCoordinates(obstacle));
     }
 }

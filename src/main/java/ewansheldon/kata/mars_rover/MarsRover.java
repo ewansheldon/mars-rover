@@ -6,14 +6,13 @@ public class MarsRover {
     public static final int RIGHT = 1;
     public static final int LEFT = -1;
     private int[] coordinates;
-    private int dir = 0;
+    private String dir = "N";
     private String commands;
     private Grid grid;
-    private char[] directions = new char[]{'N','E','S','W'};
 
     public MarsRover(Grid grid) {
         this.grid = grid;
-        this.coordinates = new int[]{0,0};
+        this.coordinates = new int[]{0, 0};
     }
 
     public String execute(String commands) {
@@ -32,17 +31,7 @@ public class MarsRover {
     }
 
     private String formattedPosition() {
-        return format("%s:%s:%s", coordinates[0], coordinates[1], compassDir());
-    }
-
-    private char compassDir() {
-        return directions[directionIndex()];
-    }
-
-    private int directionIndex() {
-        int index = dir % 4;
-        while (index < 0) index += 4;
-        return index;
+        return format("%s:%s:%s", coordinates[0], coordinates[1], dir);
     }
 
     private void executeCommands() throws ObstacleEncounteredException {
@@ -57,39 +46,50 @@ public class MarsRover {
                 move();
                 break;
             case 'R':
-                rotate(RIGHT);
+                dir = getCommandMap().right;
                 break;
             case 'L':
-                rotate(LEFT);
+                dir = getCommandMap().left;
                 break;
         }
-    }
-
-    private void rotate(int directionFactor) {
-        dir += directionFactor;
     }
 
     private void move() throws ObstacleEncounteredException {
-        int[] newCoordinates = coordinates;
-        switch (directionIndex()) {
-            case 0:
-                newCoordinates[1]++;
-                break;
-            case 1:
-                newCoordinates[0]++;
-                break;
-            case 2:
-                newCoordinates[1]--;
-                break;
-            case 3:
-                newCoordinates[0]--;
-                break;
-        }
+        int[] newCoordinates = addMovementVector(coordinates, getCommandMap().movementVector);
 
         try {
             coordinates = grid.confirmCoordinates(newCoordinates);
         } catch (Exception e) {
             throw new ObstacleEncounteredException();
+        }
+    }
+
+    private CommandMap getCommandMap() {
+        return CommandMap.valueOf(dir);
+    }
+
+    private int[] addMovementVector(int[] newCoordinates, int[] movementVector) {
+        for (int i = 0; i < 2; i++) {
+            newCoordinates[i] += movementVector[i];
+        }
+
+        return newCoordinates;
+    }
+
+    private enum CommandMap {
+        N ("W", "E", new int[]{0,1}),
+        E ("N", "S", new int[]{1,0}),
+        S ("E", "W", new int[]{0,-1}),
+        W ("S", "N", new int[]{-1,0});
+
+        private final String left;
+        private final String right;
+        private final int[] movementVector;
+
+        CommandMap(String left, String right, int[] movementVector) {
+            this.left = left;
+            this.right = right;
+            this.movementVector = movementVector;
         }
     }
 }

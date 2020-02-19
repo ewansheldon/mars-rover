@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b65057b8-d710-4351-9439-1e1feedccefc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/GridShould.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ewansheldon/kata/mars_rover/MarsRover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ewansheldon/kata/mars_rover/MarsRover.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GridShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GridShould.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/MarsRoverShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MarsRoverShould.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/GridShould.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/GridShould.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/MarsRoverShould.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/MarsRoverShould.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +52,7 @@
       <recent name="ewansheldon" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GridShould">
+  <component name="RunManager" selected="JUnit.MarsRoverShould">
     <configuration name="GridShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mars-rover" />
       <option name="PACKAGE_NAME" value="" />
@@ -71,8 +73,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GridShould" />
         <item itemvalue="JUnit.MarsRoverShould" />
+        <item itemvalue="JUnit.GridShould" />
       </list>
     </recent_temporary>
   </component>
@@ -90,30 +92,30 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="453" y="123" key="#com.intellij.ide.util.MemberChooser" timestamp="1582118045726">
+    <state x="453" y="123" key="#com.intellij.ide.util.MemberChooser" timestamp="1582125194971">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="453" y="123" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1582118045726" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1582124439512">
+    <state x="453" y="123" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1582125194971" />
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1582125790582">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1582124439512" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1582124439509">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1582125790582" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1582125790581">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1582124439509" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1582124439507">
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1582125790581" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1582125790580">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1582124439507" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1582124439510">
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1582125790580" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1582125790581">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1582124439510" />
-    <state x="446" y="325" key="ReplaceDuplicatesPrompt" timestamp="1582121566204">
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1582125790581" />
+    <state x="446" y="325" key="ReplaceDuplicatesPrompt" timestamp="1582125822833">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="446" y="325" key="ReplaceDuplicatesPrompt/0.0.1280.800@0.0.1280.800" timestamp="1582121566204" />
+    <state x="446" y="325" key="ReplaceDuplicatesPrompt/0.0.1280.800@0.0.1280.800" timestamp="1582125822833" />
     <state x="149" y="39" key="SettingsEditor" timestamp="1582109602009">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -126,10 +128,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="419" y="134" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.800@0.0.1280.800" timestamp="1582109185542" />
-    <state x="378" y="160" width="529" height="484" key="extract.method.dialog" timestamp="1582122875551">
+    <state x="378" y="160" width="529" height="484" key="extract.method.dialog" timestamp="1582125820696">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="378" y="160" width="529" height="484" key="extract.method.dialog/0.0.1280.800@0.0.1280.800" timestamp="1582122875551" />
+    <state x="378" y="160" width="529" height="484" key="extract.method.dialog/0.0.1280.800@0.0.1280.800" timestamp="1582125820696" />
     <state x="305" y="185" key="run.anything.popup" timestamp="1582109377489">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
