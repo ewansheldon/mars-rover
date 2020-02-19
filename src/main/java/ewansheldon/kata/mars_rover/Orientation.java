@@ -12,10 +12,14 @@ public class Orientation {
     }
 
     public void turnRight() {
-        direction = NextPosition.valueOf(direction).right;
+        direction = nextPositions().right;
     }
 
     public void turnLeft() {
-        direction = NextPosition.valueOf(direction).left;
+        direction = nextPositions().left;
+    }
+
+    private NextPosition nextPositions() {
+        return NextPosition.valueOf(direction);
     }
 }
