@@ -16,7 +16,7 @@ public class MarsRover {
 
         try {
             executeCommands();
-            return formattedPosition();
+            return position.formattedPosition();
         } catch (ObstacleEncounteredException e) {
             return obstacleResponse();
         }
@@ -28,11 +28,7 @@ public class MarsRover {
         }
     }
 
-    private String formattedPosition() {
-        return position.formattedPosition();
-    }
-
     private String obstacleResponse() {
-        return OBSTACLE_FLAG + formattedPosition();
+        return OBSTACLE_FLAG + position.formattedPosition();
     }
 }
