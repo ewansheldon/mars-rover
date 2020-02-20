@@ -6,9 +6,11 @@ public class MarsRover {
     public static final String RESPONSE_FORMAT = "%s:%s:%s";
     public static final String OBSTACLE_FLAG = "O:";
     private String commands;
+    private Position position;
     private CommandControl commandControl;
 
-    public MarsRover(CommandControl commandControl) {
+    public MarsRover(Position position, CommandControl commandControl) {
+        this.position = position;
         this.commandControl = commandControl;
     }
 
@@ -30,7 +32,7 @@ public class MarsRover {
     }
 
     private String currentDirection() {
-        return commandControl.currentDirection();
+        return position.currentDirection();
     }
 
     private String formattedPosition() {
@@ -38,7 +40,7 @@ public class MarsRover {
     }
 
     private int[] coordinates() {
-        return commandControl.getCoordinates();
+        return position.getCoordinates();
     }
 
     private String obstacleResponse() {

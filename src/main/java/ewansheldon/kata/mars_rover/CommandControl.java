@@ -1,11 +1,10 @@
 package ewansheldon.kata.mars_rover;
 
-import java.util.HashMap;
 import java.util.Map;
 
 public class CommandControl {
     private Position position;
-    private Map<Character, Command> commands = new HashMap<>();
+    private Map<Character, Command> commands;
     private Orientation orientation;
 
     public CommandControl(Position position, Orientation orientation) {
@@ -15,14 +14,11 @@ public class CommandControl {
     }
 
     private void createCommands() {
-//        this.commands = Map.of(
-//                'M', new MoveForward(position),
-//                'L', new TurnLeft(orientation),
-//                'R', new TurnRight(orientation)
-//        );
-        commands.put('M', new MoveForward(position));
-        commands.put('L', new TurnLeft(orientation));
-        commands.put('R', new TurnRight(orientation));
+        this.commands = Map.of(
+                'M', new MoveForward(position),
+                'L', new TurnLeft(orientation),
+                'R', new TurnRight(orientation)
+        );
     }
 
     public void execute(char commandCode) throws ObstacleEncounteredException {
@@ -33,11 +29,11 @@ public class CommandControl {
         command.execute();
     }
 
-    public String currentDirection() {
-        return position.currentDirection();
-    }
-
-    public int[] getCoordinates() {
-        return position.getCoordinates();
-    }
+//    public String currentDirection() {
+//        return position.currentDirection();
+//    }
+//
+//    public int[] getCoordinates() {
+//        return position.getCoordinates();
+//    }
 }

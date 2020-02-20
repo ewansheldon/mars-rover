@@ -14,7 +14,7 @@ public class MarsRoverShould {
         Orientation orientation = new Orientation();
         Position position = new Position(grid, orientation);
         CommandControl commandControl = new CommandControl(position, orientation);
-        marsRover = new MarsRover(commandControl);
+        marsRover = new MarsRover(position, commandControl);
     }
 
     @Test
