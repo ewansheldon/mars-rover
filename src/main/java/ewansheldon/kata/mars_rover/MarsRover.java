@@ -2,7 +2,7 @@ package ewansheldon.kata.mars_rover;
 
 public class MarsRover {
     public static final String OBSTACLE_FLAG = "O:";
-    private String commands;
+    private String input;
     private Position position;
     private CommandControl commandControl;
 
@@ -11,8 +11,8 @@ public class MarsRover {
         this.commandControl = commandControl;
     }
 
-    public String execute(String commands) {
-        this.commands = commands;
+    public String execute(String input) {
+        this.input = input;
 
         try {
             executeCommands();
@@ -23,8 +23,9 @@ public class MarsRover {
     }
 
     private void executeCommands() throws ObstacleEncounteredException {
-        for (int i = 0; i < commands.length(); i++) {
-            commandControl.execute(commands.charAt(i));
+        String[] commands = input.split("");
+        for (String command : commands) {
+            commandControl.execute(command);
         }
     }
 

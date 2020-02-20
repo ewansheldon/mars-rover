@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b65057b8-d710-4351-9439-1e1feedccefc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ewansheldon/kata/mars_rover/CommandControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ewansheldon/kata/mars_rover/CommandControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ewansheldon/kata/mars_rover/MarsRover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ewansheldon/kata/mars_rover/MarsRover.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,25 +118,25 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="414" y="266" width="451" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.800@0.0.1280.800" timestamp="1582205512637" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1582214019349">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1582215029944">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1582214019349" />
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1582215029944" />
     <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1582206344482" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1582214019347">
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1582215029943">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1582214019347" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1582215029943" />
     <state width="1238" height="212" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1582206344479" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1582214019346">
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1582215029942">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1582214019346" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1582215029942" />
     <state width="1238" height="212" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1582206344476" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1582214019348">
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1582215029943">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1582214019348" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1582215029943" />
     <state width="1238" height="212" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1582206344481" />
     <state x="446" y="325" key="ReplaceDuplicatesPrompt" timestamp="1582132529521">
       <screen x="0" y="0" width="1280" height="800" />
@@ -167,6 +166,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="306" y="157" width="667" height="486" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1582204868242" />
+    <state x="347" y="23" key="refactoring.ChangeSignatureDialog" timestamp="1582214983992">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="347" y="23" key="refactoring.ChangeSignatureDialog/0.0.1280.800@0.0.1280.800" timestamp="1582214983992" />
     <state x="305" y="185" key="run.anything.popup" timestamp="1582109377489">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

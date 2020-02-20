@@ -3,10 +3,10 @@ package ewansheldon.kata.mars_rover;
 import java.util.Map;
 
 public class CommandControl {
-    public static final char MOVE = 'M';
-    public static final char LEFT = 'L';
-    public static final char RIGHT = 'R';
-    private Map<Character, Command> commands;
+    public static final String MOVE = "M";
+    public static final String LEFT = "L";
+    public static final String RIGHT = "R";
+    private Map<String, Command> commands;
     private Orientation orientation;
     private Thrust thrust;
 
@@ -24,7 +24,7 @@ public class CommandControl {
         );
     }
 
-    public void execute(char commandCode) throws ObstacleEncounteredException {
+    public void execute(String commandCode) throws ObstacleEncounteredException {
         Command command = commands.get(commandCode);
         if (command != null) executeCommand(command);
     }
