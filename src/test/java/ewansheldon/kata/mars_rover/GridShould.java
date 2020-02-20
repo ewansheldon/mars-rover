@@ -1,5 +1,5 @@
-import ewansheldon.kata.mars_rover.Grid;
-import ewansheldon.kata.mars_rover.ObstacleEncounteredException;
+package ewansheldon.kata.mars_rover;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

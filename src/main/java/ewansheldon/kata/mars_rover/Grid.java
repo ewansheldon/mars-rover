@@ -1,5 +1,7 @@
 package ewansheldon.kata.mars_rover;
 
+import java.util.Arrays;
+
 public class Grid {
     private static final int LOWER_LIMIT = 0;
     private static final int[] LIMITS = new int[]{10, 10};
@@ -22,7 +24,7 @@ public class Grid {
 
     private boolean isObstacle(int[] newCoordinates) {
         for (int[] obstacle : obstacles) {
-            if (newCoordinates.equals(obstacle)) {
+            if (Arrays.equals(newCoordinates, obstacle)) {
                 return true;
             }
         }

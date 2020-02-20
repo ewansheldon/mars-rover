@@ -22,11 +22,12 @@ public class Thrust {
     }
 
     private int[] addMovementVector(int[] origin, int[] vector) {
+        int[] newCoordinates = origin.clone();
         for (int i = 0; i < 2; i++) {
-            origin[i] += vector[i];
+            newCoordinates[i] += vector[i];
         }
 
-        return origin;
+        return newCoordinates;
     }
 
     private NextPosition getNextPosition() {

@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b65057b8-d710-4351-9439-1e1feedccefc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ewansheldon/kata/mars_rover/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ewansheldon/kata/mars_rover/Grid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ewansheldon/kata/mars_rover/Thrust.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ewansheldon/kata/mars_rover/Thrust.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MarsRoverShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RoverCommandsAcceptanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ewansheldon/kata/mars_rover/Grid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ewansheldon/kata/mars_rover/Grid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ewansheldon/kata/mars_rover/Thrust.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ewansheldon/kata/mars_rover/Thrust.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/MarsRoverShould.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,29 +57,40 @@
       <recent name="ewansheldon" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MarsRoverShould">
+  <component name="RunManager" selected="JUnit.GridShould">
     <configuration name="GridShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mars-rover" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GridShould" />
+      <option name="PACKAGE_NAME" value="ewansheldon.kata.mars_rover" />
+      <option name="MAIN_CLASS_NAME" value="ewansheldon.kata.mars_rover.GridShould" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MarsRoverShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RoverCommandsAcceptanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mars-rover" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MarsRoverShould" />
+      <option name="MAIN_CLASS_NAME" value="RoverCommandsAcceptanceTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RoverCommandsAcceptanceTest.return_obstacle_and_position_when_encountered" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mars-rover" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RoverCommandsAcceptanceTest" />
+      <option name="METHOD_NAME" value="return_obstacle_and_position_when_encountered" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MarsRoverShould" />
         <item itemvalue="JUnit.GridShould" />
+        <item itemvalue="JUnit.RoverCommandsAcceptanceTest" />
+        <item itemvalue="JUnit.RoverCommandsAcceptanceTest.return_obstacle_and_position_when_encountered" />
       </list>
     </recent_temporary>
   </component>
@@ -98,25 +115,29 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="453" y="123" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1582199754176" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1582202906660">
+    <state x="414" y="266" width="451" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1582205512637">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1582202906660" />
+    <state x="414" y="266" width="451" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.800@0.0.1280.800" timestamp="1582205512637" />
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1582205524505">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1582205524505" />
     <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1582132549383" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1582202906658">
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1582205524502">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1582202906658" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1582205524502" />
     <state width="1238" height="212" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1582132549380" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1582202906656">
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1582205524501">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1582202906656" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1582205524501" />
     <state width="1238" height="212" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1582132549378" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1582202906659">
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1582205524504">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1582202906659" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1582205524504" />
     <state width="1238" height="212" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1582132549382" />
     <state x="446" y="325" key="ReplaceDuplicatesPrompt" timestamp="1582132529521">
       <screen x="0" y="0" width="1280" height="800" />
@@ -130,14 +151,22 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="319" y="232" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1582191685668" />
-    <state x="419" y="134" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1582109185542">
+    <state x="429" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582204850889">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="419" y="134" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.800@0.0.1280.800" timestamp="1582109185542" />
+    <state x="429" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.800@0.0.1280.800" timestamp="1582204850889" />
+    <state x="419" y="134" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1582205561998">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="419" y="134" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.800@0.0.1280.800" timestamp="1582205561998" />
     <state x="378" y="160" width="529" height="484" key="extract.method.dialog" timestamp="1582132844688">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="378" y="160" width="529" height="484" key="extract.method.dialog/0.0.1280.800@0.0.1280.800" timestamp="1582132844688" />
+    <state x="306" y="157" width="667" height="486" key="find.popup" timestamp="1582204868242">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="306" y="157" width="667" height="486" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1582204868242" />
     <state x="305" y="185" key="run.anything.popup" timestamp="1582109377489">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
