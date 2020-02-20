@@ -22,7 +22,8 @@ public class CommandControl {
     }
 
     public void execute(char commandCode) throws ObstacleEncounteredException {
-        executeCommand(commands.get(commandCode));
+        Command command = commands.get(commandCode);
+        if (command != null) executeCommand(command);
     }
 
     private void executeCommand(Command command) throws ObstacleEncounteredException {

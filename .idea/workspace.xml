@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b65057b8-d710-4351-9439-1e1feedccefc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ewansheldon/kata/mars_rover/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ewansheldon/kata/mars_rover/Grid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ewansheldon/kata/mars_rover/Thrust.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ewansheldon/kata/mars_rover/Thrust.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MarsRoverShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RoverCommandsAcceptanceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ewansheldon/kata/mars_rover/Grid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ewansheldon/kata/mars_rover/Grid.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ewansheldon/kata/mars_rover/Thrust.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ewansheldon/kata/mars_rover/Thrust.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/MarsRoverShould.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RoverCommandsAcceptanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RoverCommandsAcceptanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ewansheldon/kata/mars_rover/GridShould.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ewansheldon/kata/mars_rover/GridShould.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +16,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -46,7 +43,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="ewansheldon.kata.mars_rover" />
       <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ewansheldon.kata.mars_rover" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -57,7 +58,7 @@
       <recent name="ewansheldon" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GridShould">
+  <component name="RunManager" selected="JUnit.RoverCommandsAcceptanceTest">
     <configuration name="GridShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mars-rover" />
       <option name="PACKAGE_NAME" value="ewansheldon.kata.mars_rover" />
@@ -88,8 +89,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GridShould" />
         <item itemvalue="JUnit.RoverCommandsAcceptanceTest" />
+        <item itemvalue="JUnit.GridShould" />
         <item itemvalue="JUnit.RoverCommandsAcceptanceTest.return_obstacle_and_position_when_encountered" />
       </list>
     </recent_temporary>
@@ -119,26 +120,26 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="414" y="266" width="451" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.800@0.0.1280.800" timestamp="1582205512637" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1582205524505">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1582206326052">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1582205524505" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1582132549383" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1582205524502">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1582206326052" />
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1582206001814" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1582206326050">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1582205524502" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1582132549380" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1582205524501">
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1582206326050" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1582206001810" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1582206326049">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1582205524501" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1582132549378" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1582205524504">
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1582206326049" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1582206001809" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1582206326051">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1582205524504" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1582132549382" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1582206326051" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1582206001812" />
     <state x="446" y="325" key="ReplaceDuplicatesPrompt" timestamp="1582132529521">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
