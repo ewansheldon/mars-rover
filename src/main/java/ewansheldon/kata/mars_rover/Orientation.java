@@ -7,16 +7,16 @@ public class Orientation {
         this.direction = "N";
     }
 
-    public String getDirection() {
-        return direction;
-    }
-
     public void turnRight() {
         direction = nextPositions().right;
     }
 
     public void turnLeft() {
         direction = nextPositions().left;
+    }
+
+    public String getDirection() {
+        return direction;
     }
 
     private NextPosition nextPositions() {

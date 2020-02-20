@@ -33,7 +33,7 @@ public class Thrust {
         return NextPosition.valueOf(currentDirection());
     }
 
-    public String currentDirection() {
+    private String currentDirection() {
         return orientation.getDirection();
     }
 
