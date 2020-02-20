@@ -3,19 +3,19 @@ package ewansheldon.kata.mars_rover;
 import java.util.Map;
 
 public class CommandControl {
-    private Position position;
     private Map<Character, Command> commands;
     private Orientation orientation;
+    private Thrust thrust;
 
-    public CommandControl(Position position, Orientation orientation) {
-        this.position = position;
+    public CommandControl(Orientation orientation, Thrust thrust) {
         this.orientation = orientation;
+        this.thrust = thrust;
         createCommands();
     }
 
     private void createCommands() {
         this.commands = Map.of(
-                'M', new MoveForward(position),
+                'M', new MoveForward(thrust),
                 'L', new TurnLeft(orientation),
                 'R', new TurnRight(orientation)
         );
@@ -28,12 +28,4 @@ public class CommandControl {
     private void executeCommand(Command command) throws ObstacleEncounteredException {
         command.execute();
     }
-
-//    public String currentDirection() {
-//        return position.currentDirection();
-//    }
-//
-//    public int[] getCoordinates() {
-//        return position.getCoordinates();
-//    }
 }

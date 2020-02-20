@@ -1,14 +1,14 @@
 package ewansheldon.kata.mars_rover;
 
 public class MoveForward implements Command {
-    private Position position;
+    private Thrust thrust;
 
-    public MoveForward(Position position) {
-        this.position = position;
+    public MoveForward(Thrust thrust) {
+        this.thrust = thrust;
     }
 
     @Override
     public void execute() throws ObstacleEncounteredException {
-        position.move();
+        thrust.move();
     }
 }
