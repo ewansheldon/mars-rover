@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b65057b8-d710-4351-9439-1e1feedccefc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ewansheldon/kata/mars_rover/CommandControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ewansheldon/kata/mars_rover/CommandControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ewansheldon/kata/mars_rover/MarsRover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ewansheldon/kata/mars_rover/MarsRover.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

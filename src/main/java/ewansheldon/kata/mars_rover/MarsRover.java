@@ -31,19 +31,19 @@ public class MarsRover {
         }
     }
 
-    private String currentDirection() {
-        return position.currentDirection();
-    }
-
     private String formattedPosition() {
         return format(RESPONSE_FORMAT, coordinates()[0], coordinates()[1], currentDirection());
+    }
+
+    private String obstacleResponse() {
+        return OBSTACLE_FLAG + formattedPosition();
     }
 
     private int[] coordinates() {
         return position.getCoordinates();
     }
 
-    private String obstacleResponse() {
-        return OBSTACLE_FLAG + formattedPosition();
+    private String currentDirection() {
+        return position.currentDirection();
     }
 }
